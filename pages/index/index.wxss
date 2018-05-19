@@ -1,0 +1,23 @@
+/**index.wxss**/
+swiper{
+ width: 100%
+}
+swiper image{
+  display: block;
+  width: 100%;
+}
+.index-main{
+  width: 100;
+  box-sizing: border-box;
+  padding: 0 0.45rem;
+  background-color: #000;
+  height: 100rpx;
+}
+
+.menu-list{
+  width: 100%;
+  display: flex;
+}
+.menu-list .menu-item{
+  width: 25%;
+}

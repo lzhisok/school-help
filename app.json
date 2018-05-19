@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffdc1e",
+    "navigationBarTitleText": "校园帮呗",
+    "navigationBarTextStyle":"black"
+  }
+}
