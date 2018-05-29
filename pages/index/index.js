@@ -61,37 +61,62 @@ Page({
     ],
     menu: [
       {
-        icon: 'images/icon_menu1.png',
-        text: '跑腿办事'
+        icon: '../../images/icon_menu1.png',
+        text: '跑腿办事',
+        url: '/pages/logs/logs'
       },
       {
-        icon: 'images/icon_menu2.png',
-        text: '同寝拼团'
+        icon: '../../images/icon_menu2.png',
+        text: '同寝拼团',
+        url: '/pages/logs/logs'
       },
       {
-        icon: 'images/icon_menu3.png',
-        text: '外卖到寝'
+        icon: '../../images/icon_menu3.png',
+        text: '外卖到寝',
+        url: '/pages/logs/logs'
       },
       {
-        icon: 'images/icon_menu4.png',
-        text: '水果饮料'
+        icon: '../../images/icon_menu4.png',
+        text: '水果饮料',
+        url: '/pages/logs/logs'
       },
       {
-        icon: 'images/icon_menu5.png',
-        text: '寝室零食'
+        icon: '../../images/icon_menu5.png',
+        text: '寝室零食',
+        url: '/pages/logs/logs'
       },
       {
-        icon: 'images/icon_menu6.png',
-        text: '食堂专区'
+        icon: '../../images/icon_menu6.png',
+        text: '食堂专区',
+        url: '/pages/logs/logs'
       },
       {
-        icon: 'images/icon_menu7.png',
-        text: '校园兼职'
+        icon: '../../images/icon_menu7.png',
+        text: '校园兼职',
+        url: '/pages/logs/logs'
       },
       {
-        icon: 'images/icon_menu8.png',
-        text: '成绩课表'
+        icon: '../../images/icon_menu8.png',
+        text: '成绩课表',
+        url: '/pages/logs/logs'
       }
     ]
   },
+  onLoad: function() {
+    var that = this;
+    wx.request({
+      url: 'https://bbapp.chuang-ba.cn/index/getMenu',
+      method: 'GET',
+      dataType: 'json',
+      success: function (data) {
+        console.log(data);
+        that.setData({
+          // menu: data.menu
+        })
+      }
+    })
+  },
+  jumpLink: function(url) {
+
+  }
 })

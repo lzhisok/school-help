@@ -8,5 +8,41 @@
     "navigationBarBackgroundColor": "#ffdc1e",
     "navigationBarTitleText": "校园帮呗",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "borderStyle": "#b9b9b9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabBar-index.png",
+        "selectedIconPath": "/images/tabBar-index-sel.png" 
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "闲聊",
+        "iconPath": "/images/tabBar-new.png",
+        "selectedIconPath": "/images/tabBar-new-sel.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "跑腿办事",
+        "iconPath": "/images/tabBar-handle.png",
+        "selectedIconPath": "/images/tabBar-handle-sel.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "订单",
+        "iconPath": "/images/tabBar-order.png",
+        "selectedIconPath": "/images/tabBar-order-sel.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/images/tabBar-user.png",
+        "selectedIconPath": "/images/tabBar-user-sel.png"
+      }
+    ]
   }
 }

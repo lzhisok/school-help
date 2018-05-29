@@ -10,11 +10,21 @@
   <view class='index-main'>
     <view class="menu-list">
       <block  wx:for="{{menu}}" wx:key="index">
-        <view class='menu-item'>
-          <icon src="item.icon" type='success'></icon>
-          <text>{{item.text}}</text>
-        </view>
+        <navigator url='{{item.url}}' class='menu-item' bindtap="jumpLink(item.url)">
+          <image class='menu-icon' src="{{item.icon}}" type='success'></image>
+          <text class='menu-text'>{{item.text}}</text>
+        </navigator>
       </block>
+    </view>
+    <view class='news'>
+      <image src='../../images/news-title.png' class='news-logo'></image>
+      <view class='news-title'>校园帮呗今天开业啦！</view>
+    </view>
+    <!-- 优选美食 -->
+    <view class='recommend-food'>
+      <view class='header-line'></view>
+      <view class='module-title'>优选美食</view>
+       <view></view> 
     </view>
   </view>
 </view>
