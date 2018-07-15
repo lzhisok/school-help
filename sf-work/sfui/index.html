@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>脸谱行动</title>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript">
+			window.onPublishProgress = function(uploadBytes, totalBytes) {
+                console.log(uploadBytes, totalBytes)
+            }
+            window.onPublishComplete = function(result) {
+                var retCode = result.retCode;
+                var descMsg   = result.descMsg ;
+                var videoId = result.videoId;
+                var videoURL = result.videoURL;
+                var coverURL = result.coverURL;
+                alert(retCode);
+                that.videoURL = videoURL;
+                that.coverURL = coverURL;
+                that.videoId = videoId;
+			}
+		</script>
+		<style>
+			#__vconsole .vc-switch{
+				bottom: 4em!important;
+			}
+		</style>
+	</head>
+ 
+	<body>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+	"dev":{
+		"baseURL": "http://localhost:8080/api"
+	},
+	"sit":{
+		"baseURL": "http://sfim-common.sit.sf-express.com/sfimecsauth/ccs"
+	},
+	"prd":{
+		"baseURL": "http://sfim-mcommon.sf-express.com/sfimecsauth/ccs"
+	}
+}

@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #F0F2F5;
+    font-family: "microsoft yahei";
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+.w1100{
+    margin: 0 auto;
+    width: 1100px;
+}
+.login-box{
+    position: relative;
+    float: right;
+    margin-top: 58px;
+    padding: 0 26px;
+    width: 390px;
+    background: #fff;
+    box-sizing: border-box;
+    .login-title{
+        margin-top: 23px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 22px;
+        color: #000;
+    }
+    .login-submit{
+        margin-top: 30px;
+        margin-bottom: 26px;
+        float: right;
+        width: 120px;
+    }
+    .input-error{
+        input{
+            border-color: #f56c6c ;
+        }
+    }
+    .login-form{
+        margin-top: 20px;
+        .login-form-item{
+            position: relative;
+            margin-bottom: 38px;
+            label{
+                display: inline-block;
+                width: 90px;
+                font-size: 16px;
+                color: #000;
+                vertical-align: middle;
+            }
+            .login-select{
+                margin-right: 4px;
+                width: 69px;
+                &.el-select .el-input__inner{
+                    padding: 0 10px;   
+                }
+            }
+            .login-input-1{
+                width: 164px;
+            }
+            .login-input-2{
+                width: 240px;
+            }
+            .login-input-3{
+                width: 154px;
+            }
+            .login-input-4{
+                input{                    
+                    padding-right: 100px;
+                }
+            }
+            .login-img-code{
+                position: relative;
+                display: inline-block;
+                margin-left: 2px;
+                img{
+                    margin-bottom: -15px;
+                    width: 80px;
+                    height: 40px;
+                }
+            }
+            .login-btn-1{
+                position: absolute;
+                right: 2px;
+                top: 35px;
+            }
+            .login-btn-2{
+                position: absolute;
+                right: 10px;
+                top: 0px;
+            }
+        }
+    }
+    .forget-succ{
+        margin-top: 23px;
+        text-align: center;
+        .forget-text-1{
+            margin-bottom: 10px;
+            height: 18px;
+            line-height: 18px;
+            font-size: 18px;
+        }
+        .forget-text-2{
+            font-size: 14px;
+            color: #606266;
+            line-height: 24px;
+        }
+    }
+}

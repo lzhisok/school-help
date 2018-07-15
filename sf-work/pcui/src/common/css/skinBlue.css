@@ -1,0 +1,106 @@
+/*顶部*/
+
+.panel-top {
+	background-color: #20A0FF;
+	color: #fff;
+}
+
+
+/*左侧菜单*/
+
+.menu-expand,
+.panel-center,
+.el-menu {
+	background-color: #fff;
+}
+
+.menu-expand {
+	border-color: #dfe6ec;
+	color: #48576A;
+}
+
+.main-menu-list {
+	border-top: 0;
+}
+
+.el-submenu__title {
+	border-bottom: 1px solid #dfe6ec;
+}
+
+.el-menu > li.is-opened {
+	border-left: 8px solid #20A0FF;
+}
+
+.el-submenu .el-menu {
+	background: #fff !important;
+}
+
+.el-submenu .el-menu .el-menu-item {
+	border-bottom: 1px solid #dfe6ec;
+}
+.mini-menu .el-submenu:hover .level-1-title,
+.mini-menu .el-submenu:hover .level-2{background-color: #dfe6ec;}
+.el-submenu.is-active .el-submenu__title {
+	border-bottom-color: #dfe6ec;
+}
+.el-menu--dark .el-submenu .el-menu{
+	background-color:initial;
+}
+.el-menu--dark .el-submenu .el-menu .el-menu-item:hover,
+.el-menu--dark .el-menu-item:hover, .el-menu--dark .el-submenu__title:hover{
+	background-color:#cdd3d8;
+}
+.el-menu--dark .el-menu-item, .el-menu--dark .el-submenu__title{
+	color: #48576a;
+}
+.el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active, .el-menu-item.is-active{
+	color: #20a0ff;
+}
+
+/*右侧面板*/
+
+.panel-container {
+	border-left: 1px solid #eee;
+}
+
+
+/*tabs标签页*/
+
+.outer-tabs.el-tabs--card>.el-tabs__header {
+	margin-top: 10px;
+}
+
+.outer-tabs.el-tabs--card>.el-tabs__header .el-tabs__item {
+	border: 1px solid #EEF1F6;
+	position: relative;
+	border-radius: 0;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 8px;
+	background: #EEF1F6;
+}
+
+.outer-tabs.el-tabs--card>.el-tabs__header .el-tabs__item:before {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: -16px;
+	border-bottom: 31px solid #EEF1F6;
+	border-right: 15px solid transparent;
+}
+
+.outer-tabs.el-tabs--card>.el-tabs__header .el-tabs__item.is-active {
+	background-color: #20A0FF;
+	color: #fff;
+	border-color: #20A0FF;
+}
+
+.outer-tabs.el-tabs--card>.el-tabs__header .el-tabs__item.is-active:before {
+	border-bottom-color: #20A0FF;
+	transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+.outer-tabs.el-tabs--card>.el-tabs__header .el-tabs__item.is-active:after {
+	content: none;
+}

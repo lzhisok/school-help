@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>页面出错了</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<style type="text/css">
+		body{background: rgb(244,244,244);}
+		.container{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+			transform: translate(-50%, -75%);
+		}
+		.btn{
+			display:inline-block;
+			margin-top:100px;
+			width: 180px;
+			height: 40px;
+			line-height: 36px;
+			color:#fff;
+			font-size: 20px;
+			background-color: #2b5987;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="errorImg"></div> 
+		<a href="javascript:;" class="btn" onclick="goback()">返回</a> 
+	</div>
+	<script>
+	function getQueryString(name) { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+        var r = window.location.search.substr(1).match(reg); 
+        if (r != null) return unescape(r[2]); return null; 
+    }
+	function goback(){
+		var origin = getQueryString('h');
+		if(origin){
+			var sit = window.location.hostname.indexOf(".sit") > -1 ? '.sit' : '';
+			window.location.href = 'http://cas'+ sit +'.sf-express.com/cas/login?service='+ origin +'/admin/login';
+		}
+	}
+	window.onload = function(){
+		var e = getQueryString('e');
+		if(e){
+			var img = new Image();
+			img.src = "img/"+ e + ".png";
+			document.getElementById('errorImg').appendChild(img);
+		}
+	}
+	</script>
+</body>
+</html>

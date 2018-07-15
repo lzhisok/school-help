@@ -1,0 +1,6 @@
+package-lock.json
+/dist
+/debug.log
+/theme
+/element-variables.css
+/node_modules

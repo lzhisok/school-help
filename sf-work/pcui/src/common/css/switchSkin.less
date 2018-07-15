@@ -1,0 +1,63 @@
+
+@color-primary:#43ae68;
+
+@color-secondary: hsl(hue(@color-primary), 99% ,90%);
+@color-white: #fff;
+//  --color-dark-white: color(var(--color-white) blend(var(--color-primary) 2%));
+@color-dark-white: hardlight(@color-white,@color-primary);
+@color-black: #000;
+
+@color-base-black: hsl(hue(@color-primary+6), 33%, 18%);
+@color-light-black: hsl(hue(@color-base-black+5), 27%, 27%);
+@color-extra-light-black: hsl(hue(@color-base-black+2), 19%, 35%);
+
+@color-base-silver: hsl(hue(@color-base-black+3), 16%, 58%);
+@color-light-silver: hsl(hue(@color-base-black+3), 23%, 67%);
+@color-extra-light-silver: hsl(hue(@color-base-black), 26%, 80%);
+
+@color-base-gray: hsl(hue(@color-base-black), 28%, 86%);
+@color-light-gray: hsl(hue(@color-base-black+10), 33%, 92%);
+@color-extra-light-gray: hsl(hue(@color-base-black+6), 33%, 95%);
+
+a{
+    color: @color-primary;
+}
+
+.main-menu-list {
+    border-top: 1px solid @color-light-silver;
+}
+
+.panel-top {
+    height: 45px;
+    line-height: 45px;
+    background: @color-primary;
+    color:fade(@color-white,80);
+}
+
+.panel-center {
+    background: @color-extra-light-gray;
+}
+
+.menu-expand {
+    border-top: 1px solid @color-light-silver;
+    border-bottom: 1px solid @color-light-silver;
+    background-color: @color-primary;
+    color:@color-extra-light-gray;
+}
+.current-row input[type=radio]{
+    background: @color-primary;
+}
+.mini-menu {
+    .el-submenu:hover {
+        .level-1-title,
+        .level-2 {
+            background-color: @color-extra-light-gray;
+        }
+        .level-1-title {
+            &::before {
+                border-color: transparent @color-extra-light-gray transparent transparent;
+            }
+        }
+        
+    }
+}
